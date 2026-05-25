@@ -1,0 +1,60 @@
+export const experiences = [
+  {
+    id: 1,
+    title: 'Machine Learning and Applied AI Engineering Co-op Student',
+    organization: 'Alberta Health Services',
+    team: 'Health Shared Services, Web and Collaboration Team',
+    location: 'Calgary, Alberta',
+    dates: 'May 2026 – Present',
+    type: 'Co-op',
+    current: true,
+    description:
+      'Improving clinical search quality inside AVA, AHS\'s internal AI-powered RAG assistant used by Alberta Health Link 811 triage nurses to navigate 1,000+ healthcare resources. The goal: ensure that when a nurse queries the system, the most clinically relevant documents surface at the top, not just documents that are semantically close.',
+    highlights: [
+      'Designed and prototyped a cross-encoder reranker for AVA\'s production search workflow, improving top-ranked document retrieval quality across 1,000+ healthcare resources used by 811 triage nurses.',
+      'Built reranker evaluation pipelines using Python, PyTorch, and Hugging Face Transformers, achieving a 56% relative lift in top-3 retrieval performance in proof-of-concept testing vs. baseline vector search.',
+      'Integrated AVA\'s existing vector search API into the evaluation workflow, retrieving top-25 candidate documents per query and measuring whether cross-encoder reranking could move expected clinical resources into top-3 results.',
+      'Benchmarked MiniLM and BGE-reranker-base across ranking accuracy, latency, and model size to identify lightweight reranker candidates that improve relevance without exceeding production deployment constraints.',
+      'Collaborated in daily standups with the AI Integration team to align on evaluation results, surface blockers, and validate that reranker outputs were clinically meaningful.',
+    ],
+    tags: ['Python', 'PyTorch', 'Hugging Face', 'RAG', 'Healthcare AI', 'NLP'],
+  },
+  {
+    id: 2,
+    title: 'Machine Learning and AI Research Intern',
+    organization: 'Data and Network Sciences and Applications Lab',
+    team: 'University of Calgary',
+    location: 'Calgary, Alberta',
+    dates: 'Dec 2025 – Present',
+    type: 'Research',
+    current: true,
+    description:
+      'Conducting applied machine learning and data analytics research to support evidence-based resource planning for Alberta Health Services. The core problem: longitudinal health datasets contain signals about chronic disease trends that are difficult to extract reliably without careful modelling and data quality work.',
+    highlights: [
+      'Applied TabPFN-based machine learning models to forecast chronic disease trends from multi-year longitudinal health datasets, producing insights used to inform resource allocation recommendations for Alberta Health Services.',
+      'Built Power BI dashboards to visualize trend data and support operational decision-making, making model outputs accessible to non-technical stakeholders.',
+      'Wrote SQL queries to extract and validate structured datasets, ensuring that the data feeding into models was accurate and analysis-ready.',
+      'Conducted data quality assessments and reconciliations, detecting inaccuracies, missing entries, and duplicate records, to maintain database integrity and ensure reliable downstream reporting.',
+      'Created and maintained detailed documentation of data workflows, standards, and validation outcomes so findings could be reproduced and handed off effectively.',
+    ],
+    tags: ['Python', 'TabPFN', 'scikit-learn', 'Power BI', 'SQL', 'Data Analysis', 'Healthcare'],
+  },
+  {
+    id: 3,
+    title: 'Information Technology Lab Supervisor',
+    organization: 'AFC Lab',
+    team: 'University of Calgary',
+    location: 'Calgary, Alberta',
+    dates: 'Jan 2026 – Apr 2026',
+    type: 'Part-time',
+    current: false,
+    description:
+      'Kept university computing labs running reliably for students and faculty during the Winter 2026 semester, handling everything from hardware faults to access issues so academic operations were never interrupted.',
+    highlights: [
+      'Delivered Tier 1 technical support across Windows 11 and macOS lab environments, diagnosing hardware, software, and access-related issues and resolving them before they disrupted class sessions or student work.',
+      'Assisted in managing and maintaining 100+ Windows-based workstations, enforcing institutional IT policies and baseline security standards across the fleet.',
+      'Managed concurrent technical incidents across multiple lab environments, triaging issues by severity to maintain service-level response times and operational continuity throughout busy exam and assignment periods.',
+    ],
+    tags: ['IT Support', 'Windows 11', 'macOS', 'Tier 1 Support', 'Lab Management'],
+  },
+]
